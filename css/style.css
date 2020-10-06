@@ -486,7 +486,9 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 18px 0;
+  padding-top: 16px;
+  padding-bottom: 9px;
+  padding-left: 0;
 }
 
 .breadcrumb-list__item {
@@ -496,7 +498,7 @@ template {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .breadcrumb-list__link {
@@ -522,17 +524,17 @@ template {
 }
 
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 1px;
   margin-bottom: 0;
 }
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-wrapper {
@@ -559,6 +561,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-top: 3px;
 }
 
 .offer {
@@ -589,6 +592,10 @@ template {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
+}
+
+sub {
+  position: inherit;
 }
 
 @media (max-width: 1200px) {
