@@ -1081,6 +1081,9 @@ sub {
         -ms-flex-align: start;
             align-items: start;
   }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1103,9 +1106,6 @@ sub {
   .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
-  }
-  .newsletter__title {
-    margin-bottom: 37px;
   }
   .subscribe {
     width: 100%;
