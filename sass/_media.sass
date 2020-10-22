@@ -199,6 +199,12 @@
   .footer
     &__input
       flex-basis: 100%
+    &-info
+      &__info
+        flex-basis: 100%
+        justify-content: flex-start
+        margin-bottom: 10px
+
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -285,7 +291,7 @@
         flex-wrap: wrap
     &__button
       order: 1
-    &__info
+    &__footnote
       flex-basis: 100%
       margin-bottom: 15px
     &-info
@@ -294,7 +300,9 @@
       flex-wrap: wrap
       &__info
         flex-basis: 100%
-        justify-content: space-between
+        justify-content: flex-start
         margin-bottom: 10px
       &__link
-        margin: 0
+        margin-right: 9px
+        &--last
+          margin-right: 0
