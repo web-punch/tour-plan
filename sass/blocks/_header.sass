@@ -21,8 +21,14 @@
     align-items: center
     justify-content: space-between
     color: $light
+    &__item
+      &--mobile
+        &--visible
+          display: none
     &__link
       color: inherit
+      font-style: normal
+      font-weight: bold
       text-decoration: none
       text-transform: uppercase
       font-size: 14px
@@ -69,6 +75,8 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
-
-
-
+.navbar
+  &__user, &__search
+    &--mobile
+      &--visible
+        display: none
