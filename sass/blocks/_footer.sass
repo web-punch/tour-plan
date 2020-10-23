@@ -10,11 +10,12 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 155px
     grid-row: 1/3
     align-self: stretch
   &__categories
     grid-row: 1/4
+    padding-left: 3px
   &__social
     &-links
       display: flex
@@ -26,12 +27,19 @@
       align-items: start
       grid-row: 2/4
       grid-column: 3/5
-
+      padding-left: 5px
+  &__additional
+    padding-left: 6px
+  &__legal
+    padding-left: 67px
   &__contact
     &-details
       grid-column: 1/3
+      padding-top: 10px
+      margin-left: -3px
     &-form
       grid-column: span 2
+      padding-left: 5px
       margin-bottom: 82px
   &__form
     display: flex
@@ -48,7 +56,7 @@
     &--inline
       margin: 0 43px 0 0
     &--mb-3
-      margin-bottom: 34px
+      margin-bottom: 33px
   &__ul
     padding: 0
     margin: 0
@@ -62,13 +70,18 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 20px
+      margin-bottom: 16px
   &__icon
     &-wrapper
-      min-width: 40px
+      min-width: 45px
   &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
     color: $footer-text-color
     margin-bottom: 22px
+    margin-top: -9px
   &__link
     text-decoration: none
     color: inherit
@@ -84,7 +97,7 @@
     padding: 0 23px
     height: 50px
     margin-bottom: 15px
-    flex-basis: 48%
+    flex-basis: 47%
   &__message
     max-height: 123px
     resize: none
@@ -115,13 +128,14 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    padding-right: 2px
   &-info
     display: flex
     justify-content: space-between
     grid-column: 2/5
     &__info
       display: flex
-      padding-left: 123px
+      padding-left: 131px
     &__link
       font-style: normal
       font-weight: normal
@@ -129,6 +143,7 @@
       line-height: 15px
       color: $light
       text-decoration: none
-      margin-right: 13px
+      margin-right: 11px
     &__payment
       max-width: 136px
+      margin-top: -7px
