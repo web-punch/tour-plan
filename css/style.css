@@ -1762,8 +1762,8 @@ sub {
     padding: 0 0 0 3px;
   }
   .modal__dialog {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
