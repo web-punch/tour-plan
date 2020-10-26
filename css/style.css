@@ -1761,6 +1761,10 @@ sub {
   .footer-info__info {
     padding: 0 0 0 3px;
   }
+  .modal__dialog {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (max-width: 762px) {
@@ -1981,6 +1985,17 @@ sub {
             justify-content: flex-start;
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__footnote {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2167,6 +2182,10 @@ sub {
   }
   .footer-info__link--last {
     margin-right: 0;
+  }
+  .modal__dialog {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
