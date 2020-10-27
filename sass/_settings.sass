@@ -29,7 +29,13 @@ button::-moz-focus-inner
   height: 50px
   &::placeholder
     color: #BDBDBD
+    text-decoration: none
 
+.invalid
+  color: $primary
+  text-decoration: underline
+  &::placeholder
+    color: $primary
 .message
   resize: none
   font-style: normal
