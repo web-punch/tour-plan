@@ -40,22 +40,18 @@ button::-moz-focus-inner {
 
 .input::-webkit-input-placeholder {
   color: #BDBDBD;
-  text-decoration: none;
 }
 
 .input:-ms-input-placeholder {
   color: #BDBDBD;
-  text-decoration: none;
 }
 
 .input::-ms-input-placeholder {
   color: #BDBDBD;
-  text-decoration: none;
 }
 
 .input::placeholder {
   color: #BDBDBD;
-  text-decoration: none;
 }
 
 .invalid {
@@ -65,18 +61,22 @@ button::-moz-focus-inner {
 
 .invalid::-webkit-input-placeholder {
   color: #EC1F46;
+  text-decoration: none;
 }
 
 .invalid:-ms-input-placeholder {
   color: #EC1F46;
+  text-decoration: none;
 }
 
 .invalid::-ms-input-placeholder {
   color: #EC1F46;
+  text-decoration: none;
 }
 
 .invalid::placeholder {
   color: #EC1F46;
+  text-decoration: none;
 }
 
 .message {
@@ -1350,9 +1350,9 @@ sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1457,6 +1457,9 @@ sub {
   line-height: 15px;
   color: #E0E0E0;
   padding-right: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer-info {
