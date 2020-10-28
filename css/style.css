@@ -1425,7 +1425,7 @@ sub {
   width: 100%;
 }
 
-.footer__input_group {
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1626,7 +1626,7 @@ sub {
     width: 230px;
     height: 230px;
   }
-  .footer__input_group {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1813,7 +1813,7 @@ sub {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .footer__input_group {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2038,7 +2038,7 @@ sub {
   .footer__legal {
     padding-left: 0;
   }
-  .footer__input_group {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
