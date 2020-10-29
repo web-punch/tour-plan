@@ -17,6 +17,10 @@ button:active, button:focus
 button::-moz-focus-inner
   border: 0 !important
 
+button
+  &:hover
+    background-color: tomato
+
 .input
   font-style: normal
   font-weight: normal
@@ -30,12 +34,6 @@ button::-moz-focus-inner
   &::placeholder
     color: #BDBDBD
 
-.invalid
-  color: $primary
-  text-decoration: underline
-  &::placeholder
-    color: $primary
-    text-decoration: none
 .message
   resize: none
   font-style: normal
@@ -48,3 +46,20 @@ button::-moz-focus-inner
   padding: 18px 23px
   &::placeholder
     color: #BDBDBD
+
+.invalid
+  color: $primary
+  text-decoration: underline
+  &::placeholder
+    color: $primary
+    text-decoration: none
+label.fix
+  position: absolute
+  left: 0
+  bottom: -40px
+  color: $primary
+  text-decoration: underline
+.fix
+  &::placeholder
+    color: $primary
+    text-decoration: none

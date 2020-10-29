@@ -74,5 +74,14 @@ $(document).ready(function () {
       },
     });
   });
+  $('.subscribe').validate({
+      errorClass: "fix",
+      messages: {
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
   $('.phone_us').mask('+7(000) 000-00-00');
 });
