@@ -70,6 +70,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone number required",
+          minlength: "Enter the number in the format +7(ХХХ) ХХХ-ХХ-ХХ",
         },
       },
     });
