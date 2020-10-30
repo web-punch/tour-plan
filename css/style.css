@@ -778,7 +778,7 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
-.hotel-slide__image {
+.hotel-slider__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -986,6 +986,12 @@ sub {
   background-color: black;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.map__item {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .newsletter {
@@ -1916,7 +1922,7 @@ sub {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__mobile--fixed {
+  .navbar--fixed {
     position: fixed;
     top: 0;
     left: 0;
