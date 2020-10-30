@@ -18,16 +18,20 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:active, button:focus {
   outline: none !important;
 }
 
-button::-moz-focus-inner {
-  border: 0 !important;
-}
-
 button:hover {
   background-color: tomato;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
 }
 
 .input {
@@ -760,6 +764,10 @@ template {
   background-color: transparent;
 }
 
+.hotel-slider__button:hover {
+  background-color: transparent;
+}
+
 .hotel-slider__button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
@@ -1138,6 +1146,11 @@ sub {
   background-position: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.reviews-slider__button:hover {
+  background-color: transparent;
 }
 
 .reviews-slider__button--prev {
@@ -1325,13 +1338,16 @@ sub {
 }
 
 .footer__logo {
-  width: 155px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__logo-image {
+  width: 155px;
 }
 
 .footer__categories {
@@ -1445,6 +1461,15 @@ sub {
 
 .footer__item--mb-2 {
   margin-bottom: 16px;
+}
+
+.footer__item-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item-link {
+  color: inherit;
 }
 
 .footer__icon-wrapper {
@@ -1793,6 +1818,8 @@ sub {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     grid-column: span 2;
+  }
+  .footer__logo-image {
     width: 100px;
   }
   .footer__social-network {
@@ -2189,8 +2216,10 @@ sub {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 3px;
+  }
+  .footer__logo-image {
     width: 95px;
-    margin-bottom: 8px;
   }
   .footer__social-network {
     -ms-grid-row: 2;
