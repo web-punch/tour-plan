@@ -806,6 +806,11 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-top: 3px;
+  padding-left: 2px;
+}
+
+.stars__image {
+  margin-right: -2px;
 }
 
 .offer {

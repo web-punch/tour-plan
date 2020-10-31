@@ -55,6 +55,15 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visability');
     modalDialog.removeClass('modal__dialog--visability');
   }
+  $(document).on('keydown',function(event) {
+   if (event.keyCode == 27) {
+      var modalOverlay = $('.modal__overlay');
+      var modalDialog = $('.modal__dialog');
+      modalOverlay.removeClass('modal__overlay--visability');
+      modalDialog.removeClass('modal__dialog--visability');
+    }
+  });
+
   // Обработка формы
   $('.form').each(function () {
     $(this).validate({
