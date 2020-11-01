@@ -1978,7 +1978,7 @@ sub {
   .navbar-bottom {
     display: none;
     position: fixed;
-    top: 78px;
+    top: 72px;
     left: 0;
     right: 0;
     bottom: 0;
