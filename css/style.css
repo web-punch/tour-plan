@@ -1002,7 +1002,6 @@ sub {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
