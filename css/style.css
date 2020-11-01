@@ -2036,6 +2036,9 @@ sub {
     background-color: #fff;
     cursor: pointer;
   }
+  .menu-button:hover {
+    background-color: #BDBDBD;
+  }
   .menu-button__line {
     width: 16px;
     height: 1px;
