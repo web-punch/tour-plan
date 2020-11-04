@@ -1,6 +1,8 @@
 .modal
   &__overlay
     position: fixed
+    overflow: auto
+    text-align: center
     top: 0
     right: 0
     bottom: 0
@@ -12,12 +14,15 @@
     &--visability
       visibility: visible
       opacity: 1
-  &__dialog
-    position: fixed
+  &__wrapper
+    position: static
+    display: inline-block
     max-width: 478px
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+    width: 90%
+    margin-top: 50px
+  &__dialog
+    position: relative
+    width: 100%
     padding: 33px 88px
     background-color: $dark
     border-radius: 8px

@@ -26,10 +26,6 @@ button:active, button:focus {
   outline: none !important;
 }
 
-button:hover {
-  background-color: tomato;
-}
-
 button::-moz-focus-inner {
   border: 0 !important;
 }
@@ -92,6 +88,7 @@ button::-moz-focus-inner {
 
 label.invalid {
   text-decoration: underline;
+  text-align: start;
 }
 
 .invalid {
@@ -595,6 +592,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -1078,6 +1076,7 @@ sub {
   min-width: 65px;
   height: 100%;
   border: none;
+  border-radius: 0 4px 4px 0;
   background-color: #EC1F46;
   color: #ffffff;
   font-style: normal;
@@ -1596,12 +1595,14 @@ sub {
   margin-top: 40px;
 }
 
-.back:hover {
-  background-color: tomato;
+.thanks {
+  margin-bottom: 10px;
 }
 
 .modal__overlay {
   position: fixed;
+  overflow: auto;
+  text-align: center;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1617,13 +1618,17 @@ sub {
   opacity: 1;
 }
 
-.modal__dialog {
-  position: fixed;
+.modal__wrapper {
+  position: static;
+  display: inline-block;
   max-width: 478px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 90%;
+  margin-top: 50px;
+}
+
+.modal__dialog {
+  position: relative;
+  width: 100%;
   padding: 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -1720,6 +1725,30 @@ sub {
   }
   .footer-info__info {
     padding-left: 90px;
+  }
+}
+
+@media (min-width: 993px) {
+  button:hover {
+    background-color: tomato;
+  }
+  .user__name:hover {
+    background-color: #BDBDBD;
+  }
+  .navbar-menu__link:hover {
+    background-color: #483d8b;
+  }
+  .breadcrumb-list__link:hover {
+    background-color: #BDBDBD;
+  }
+  .booking__number:hover {
+    background-color: #483d8b;
+  }
+  .footer__link:hover {
+    background-color: #483d8b;
+  }
+  .back:hover {
+    background-color: tomato;
   }
 }
 
@@ -1930,10 +1959,6 @@ sub {
   .footer-info__info {
     padding: 0 0 0 3px;
   }
-  .modal__dialog {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
 }
 
 @media (max-width: 762px) {
@@ -1985,6 +2010,7 @@ sub {
   }
   .navbar-bottom__visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1992,6 +2018,9 @@ sub {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+  }
+  .navbar-menu--visible {
+    padding-bottom: 15px;
   }
   .navbar-menu__item--mobile--1 {
     margin-bottom: 16px;
@@ -2034,9 +2063,6 @@ sub {
     border: none;
     background-color: #fff;
     cursor: pointer;
-  }
-  .menu-button:hover {
-    background-color: #BDBDBD;
   }
   .menu-button__line {
     width: 16px;
@@ -2157,10 +2183,6 @@ sub {
             justify-content: flex-start;
     margin-bottom: 10px;
   }
-  .modal__dialog {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
   .modal__button {
     width: 100%;
     margin-bottom: 15px;
@@ -2189,6 +2211,17 @@ sub {
   }
   .hotel-slider {
     height: 179px;
+  }
+  .hotel-slider__button {
+    width: 11px;
+    height: 11px;
+    background-size: 4px;
+  }
+  .hotel-slider__button--next {
+    right: 5px;
+  }
+  .hotel-slider__button--prev {
+    left: 4px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -2373,8 +2406,8 @@ sub {
     margin-right: 0;
   }
   .modal__dialog {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
